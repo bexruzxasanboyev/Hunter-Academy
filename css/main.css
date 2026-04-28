@@ -381,6 +381,36 @@
 
 .pathsBtn {}
 
+.teachersGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.teachersCard {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    background-color: #FD6A07;
+    animation: teachersColorCycle 8s linear infinite;
+}
+
+.teachersCard:nth-child(1) { animation-delay: 0s; }
+.teachersCard:nth-child(2) { animation-delay: -2s; }
+.teachersCard:nth-child(3) { animation-delay: -4s; }
+.teachersCard:nth-child(4) { animation-delay: -6s; }
+
+@keyframes teachersColorCycle {
+    0%   { background-color: #FD6A07; }
+    25%  { background-color: #1E90FF; }
+    50%  { background-color: #2ECC71; }
+    75%  { background-color: #E74C3C; }
+    100% { background-color: #FD6A07; }
+}
+
 @media (max-width:400px) {
     .topicsCard {
         margin-left: 30px;
