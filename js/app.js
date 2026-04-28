@@ -65,3 +65,49 @@ document.addEventListener("DOMContentLoaded", function () {
     dots[0].addEventListener('click', () => scrollByDir(-1));
     dots[1].addEventListener('click', () => scrollByDir(1));
 })();
+
+(() => {
+    const grid = document.querySelector('.teachersGrid');
+    if (!grid) return;
+    let isDown = false;
+    let startX = 0;
+    let startScroll = 0;
+    let moved = false;
+
+    grid.style.cursor = 'grab';
+
+    grid.addEventListener('mousedown', (e) => {
+        isDown = true;
+        moved = false;
+        startX = e.pageX - grid.offsetLeft;
+        startScroll = grid.scrollLeft;
+        grid.style.cursor = 'grabbing';
+        grid.style.scrollBehavior = 'auto';
+    });
+
+    const stop = () => {
+        if (!isDown) return;
+        isDown = false;
+        grid.style.cursor = 'grab';
+        grid.style.scrollBehavior = '';
+    };
+
+    grid.addEventListener('mouseleave', stop);
+    grid.addEventListener('mouseup', stop);
+
+    grid.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - grid.offsetLeft;
+        const walk = x - startX;
+        if (Math.abs(walk) > 3) moved = true;
+        grid.scrollLeft = startScroll - walk;
+    });
+
+    grid.addEventListener('click', (e) => {
+        if (moved) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    }, true);
+})();
