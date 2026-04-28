@@ -1,2 +1,1 @@
 # Hunter-Academy
-# Hunter-Academy
