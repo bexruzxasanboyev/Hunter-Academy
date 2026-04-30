@@ -7,7 +7,7 @@
     <title>Hunter Academy</title>
 
     <style>
-       * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: "Instrument Sans", sans-serif; background-color: black; } .heroSection { padding-bottom: 48px; } .heroContainer { max-width: 400px; margin: 0 auto; position: relative; } .heroContact__box { padding-top: 16px; background-image: url(./images/bg.avif); background-repeat: no-repeat; background-size: cover; padding-left: 10px; padding-right: 10px; background-position: center; } .heroHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; } .heroContact { display: flex; flex-direction: column; gap: 4px; color: white; } .heroContactLabel { display: flex; align-items: center; gap: 4px; } .heroContactLabel p { font-weight: 400; font-size: 12px; line-height: 100%; } .heroContactPhone { font-weight: 500; font-size: 14px; line-height: 100%; margin-left: 14px; text-align: center; } .heroTitle { font-weight: 700; font-size: clamp(32px, 10vw, 38px); line-height: 114%; letter-spacing: 2%; text-align: center; text-transform: uppercase; margin-bottom: 4px; color: white; } .heroStat { font-weight: 400; font-size: 18px; line-height: 125%; text-align: center; color: white; margin-bottom: 16px; } .heroVideoBtn { background-color: #464646; max-width: 350px; width: 100%; border-radius: 25px; margin-bottom: 24px; height: 218px; margin-left: auto; margin-right: auto; cursor: pointer; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; } .heroFormBtn__text { font-weight: 400; font-size: 18px; line-height: 125%; color: white; position: absolute; bottom: 16px; left: 24px; } .heroForm { background-color: white; border-radius: 20px; max-width: 326px; width: 100%; padding: 16px 16px 24px 16px; display: flex; flex-direction: column; margin: 0 auto; } .heroFormTitle { font-weight: 700; font-size: 24px; line-height: 125%; text-align: center; margin-bottom: 18px; } .heroFormLabel { display: flex; flex-direction: column; margin-bottom: 4px; } .heroFormInput { margin-bottom: 16px; border: 1px solid #FD6A07; border-radius: 8px; padding: 20px 0 19px 15px; font-weight: 400; font-size: 11px; line-height: 100%; color: #9E9E9E; } .heroFormBtn { max-width: 294px; width: 100%; border-radius: 50px; background-color: #FF6700; box-shadow: 0px 4px 0px 0px #9A4003, 0px 4px 4px 0px #FFFFFF40 inset, 0px -4px 4px 0px #FFFFFF26 inset, 0px 4px 20px 0px #FD6A0780; border: none; cursor: pointer; padding: 23px 0; font-weight: 700; font-size: 18px; line-height: 100%; letter-spacing: 4%; text-transform: uppercase; color: white; text-shadow: 0px 1px 2px 0px #00000026; } .teachersSection { padding-bottom: 48px; } .teachersTitle { font-weight: 700; font-size: 34px; line-height: 100%; text-align: center; text-transform: uppercase; color: white; letter-spacing: 1.5%; margin-bottom: 4px; } .teachersSubtitle { font-weight: 400; font-size: 16px; line-height: 125%; color: white; text-align: center; margin-bottom: 16px; } .teachersWrapper { overflow: hidden; width: 100%; max-width: 400px; margin: 0 auto; margin-bottom: 20px; -webkit-mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%); mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%); } .teachersTrack { display: flex; gap: 20px; width: max-content; animation: scroll 12s linear infinite; } .teachersCard { width: 250px; /* o‘zgarmaydi */ height: 150px; /* o‘zgarmaydi */ background: #eee; border-radius: 12px; flex-shrink: 0; } /* 🔁 animation */ @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } } .teachersCard { background-color: #464646; width: 162px; height: 180px; border-radius: 20px; flex: 0 0 auto; } .teachersInfo { background-color: #321200; max-width: 300px; width: 100%; padding: 24px 0 24px 37px; margin: 0 auto; position: relative; } .teachersInfo__images img { position: absolute; } .teachersInfo__images img:nth-child(1) { top: 0; left: 0; transform: rotate(270deg); } .teachersInfo__images img:nth-child(2) { top: 0; right: 0; } .teachersInfo__images img:nth-child(3) { bottom: 0; left: 0; transform: rotate(180deg); } .teachersInfo__images img:nth-child(4) { bottom: 0; right: 0; transform: rotate(90deg); } .teachersList { color: white; margin-bottom: 7px; } .teachersList li { font-weight: 400; font-size: 16px; line-height: 125%; margin-left: 25px; } .teachersListTitle { margin-bottom: 2px; } .teachersNote { font-weight: 400; font-size: 12px; line-height: 125%; color: #FD6A07; margin-left: 15px; }
+       * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: "Instrument Sans", sans-serif; background-color: black; } .heroSection { padding-bottom: 48px; } .heroContainer { max-width: 400px; margin: 0 auto; position: relative; } .heroContact__box { padding-top: 16px; background-image: url(./images/bg.avif); background-repeat: no-repeat; background-size: cover; padding-left: 10px; padding-right: 10px; background-position: center; } .heroHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; } .heroContact { display: flex; flex-direction: column; gap: 4px; color: white; } .heroContactLabel { display: flex; align-items: center; gap: 4px; } .heroContactLabel p { font-weight: 400; font-size: 12px; line-height: 100%; } .heroContactPhone { font-weight: 500; font-size: 14px; line-height: 100%; margin-left: 14px; text-align: center; } .heroTitle { font-weight: 700; font-size: clamp(29px, 9vw, 38px); line-height: 114%; letter-spacing: 2%; text-align: center; text-transform: uppercase; margin-bottom: 4px; color: white; } .heroStat { font-weight: 400; font-size: 18px; line-height: 125%; text-align: center; color: white; margin-bottom: 16px; } .heroVideoBtn { border-radius: 30px; background-color: #464646; max-width: 350px; width: 100%; border-radius: 25px; margin-bottom: 24px; height: 218px; margin-left: auto; margin-right: auto; cursor: pointer; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; } .heroVideoBtn iframe { border-radius: 18px; } .heroFormBtn__text { font-weight: 400; font-size: 18px; line-height: 125%; color: white; position: absolute; bottom: 16px; left: 24px; } .heroForm { background-color: white; border-radius: 20px; max-width: 326px; width: 100%; padding: 16px 16px 24px 16px; display: flex; flex-direction: column; margin: 0 auto; } .heroFormTitle { font-weight: 700; font-size: 24px; line-height: 125%; text-align: center; margin-bottom: 18px; } .heroFormLabel { display: flex; flex-direction: column; margin-bottom: 4px; } .heroFormInput { margin-bottom: 16px; border: 1px solid #FD6A07; border-radius: 8px; padding: 20px 0 19px 15px; font-weight: 400; font-size: 11px; line-height: 100%; color: #9E9E9E; } .heroFormBtn { max-width: 294px; width: 100%; border-radius: 50px; background-color: #FF6700; box-shadow: 0px 4px 0px 0px #9A4003, 0px 4px 4px 0px #FFFFFF40 inset, 0px -4px 4px 0px #FFFFFF26 inset, 0px 4px 20px 0px #FD6A0780; border: none; cursor: pointer; padding: 23px 0; font-weight: 700; font-size: 18px; line-height: 100%; letter-spacing: 4%; text-transform: uppercase; color: white; text-shadow: 0px 1px 2px 0px #00000026; } .teachersSection { padding-bottom: 48px; } .teachersTitle { font-weight: 700; font-size: 34px; line-height: 100%; text-align: center; text-transform: uppercase; color: white; letter-spacing: 1.5%; margin-bottom: 4px; } .teachersSubtitle { font-weight: 400; font-size: 16px; line-height: 125%; color: white; text-align: center; margin-bottom: 16px; } .teachersWrapper { overflow: hidden; width: 100%; max-width: 400px; margin: 0 auto; margin-bottom: 20px; -webkit-mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%); mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%); } .teachersTrack { display: flex; gap: 20px; width: max-content; animation: scroll 12s linear infinite; } .teachersCard { width: 250px; /* o‘zgarmaydi */ height: 150px; /* o‘zgarmaydi */ background: #eee; border-radius: 12px; flex-shrink: 0; } /* 🔁 animation */ @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } } .teachersCard { background-color: #464646; width: 162px; height: 180px; border-radius: 20px; flex: 0 0 auto; } .teachersInfo { background-color: #321200; max-width: 300px; width: 100%; padding: 24px 0 24px 37px; margin: 0 auto; position: relative; } .teachersInfo__images img { position: absolute; } .teachersInfo__images img:nth-child(1) { top: 0; left: 0; transform: rotate(270deg); } .teachersInfo__images img:nth-child(2) { top: 0; right: 0; } .teachersInfo__images img:nth-child(3) { bottom: 0; left: 0; transform: rotate(180deg); } .teachersInfo__images img:nth-child(4) { bottom: 0; right: 0; transform: rotate(90deg); } .teachersList { color: white; margin-bottom: 7px; } .teachersList li { font-weight: 400; font-size: 16px; line-height: 125%; margin-left: 25px; } .teachersListTitle { margin-bottom: 2px; } .teachersNote { font-weight: 400; font-size: 12px; line-height: 125%; color: #FD6A07; margin-left: 15px; }
     </style>
     <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
     <noscript>
@@ -43,8 +43,11 @@
                     </p>
 
                     <div class="heroVideoBtn">
-                        <img src="./images/player.avif" loading="lazy" decoding="async" width="37" height="37" alt="">
-                        <p class="heroFormBtn__text">video</p>
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/bSc1EykqG9g"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
 
@@ -328,130 +331,132 @@
                 <h2 class="pathsTitle" style="margin-bottom: 16px;">o'quvchilarimiz <br>
                     natijalari</h2>
 
-                    <div class="resultsSlider">
-                        <div class="resultsSlide">
-                            <div class="resultsSlidePhoto">
-                                <img src="./images/classmets/4.avif" loading="lazy" decoding="async" width="116"
-                                    height="208" alt="images">
-                            </div>
-
-                            <div class="resultsSlideCompare">
-                                <p class="resultsSlideCompare__text">Erkinova Dilorom | 20 yosh</p>
-                                <h3>Kursdan oldin:</h3>
-                                <p style="margin-bottom: 16px;">Sotuv menejeri edi daromad <br> kamligi va ziddiyatlar
-                                    tufayli ketgan</p>
-
-                                <h3 style="color: #FF6700;">Kursdan keyin:</h3>
-                                <p
-                                    style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
-                                    «Generator house» kompaniyasida <br> sotuv menejeri. Oylik daromadi <br>
-                                    <b>3 MLN+KPI,</b> o'sib borish imkoniyati. <br>
-                                    5,6 million kutilyabdi
-                                </p>
-                            </div>
+                <div class="resultsSlider">
+                    <div class="resultsSlide">
+                        <div class="resultsSlidePhoto">
+                            <img src="./images/classmets/4.avif" loading="lazy" decoding="async" width="116"
+                                height="208" alt="images">
                         </div>
 
-                        <div class="resultsSlide">
-                            <div class="resultsSlidePhoto">
-                                <img src="./images/classmets/1.avif" loading="lazy" decoding="async" width="116"
-                                    height="208" alt="images">
-                            </div>
+                        <div class="resultsSlideCompare">
+                            <p class="resultsSlideCompare__text">Erkinova Dilorom | 20 yosh</p>
+                            <h3>Kursdan oldin:</h3>
+                            <p style="margin-bottom: 16px;">Sotuv menejeri edi daromad <br> kamligi va ziddiyatlar
+                                tufayli ketgan</p>
 
-                            <div class="resultsSlideCompare">
-                                <p class="resultsSlideCompare__text">Dexqonova Mu’mina | 23 yosh</p>
-                                <h3>Kursdan oldin:</h3>
-                                <p style="margin-bottom: 16px;">Hech qayerda ishlamagan</p>
-
-                                <h3 style="color: #FF6700;">Kursdan keyin:</h3>
-                                <p
-                                    style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
-                                    «Global sert»  kompaniyasida  <br>
-                                    <b>Sotuv menejeri. 4 mln so’m</b> oylik daromad, keyingi oydan
-                                    6, 7 million kutilyabdi
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="resultsSlide">
-                            <div class="resultsSlidePhoto">
-                                <img src="./images/classmets/2.avif" loading="lazy" decoding="async" width="116"
-                                    height="208" alt="images">
-                            </div>
-
-                            <div class="resultsSlideCompare">
-                                <p class="resultsSlideCompare__text">Xaydarov Shaxobiddin | 21 yosh</p>
-                                <h3>Kursdan oldin:</h3>
-                                <p style="margin-bottom: 16px;">Qorovul bo'lib ishlagan</p>
-
-                                <h3 style="color: #FF6700;">Kursdan keyin:</h3>
-                                <p
-                                    style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
-                                    Hoover kompaniyasida sotuv <br> menejeri. Hozirda <b>3.5 million oylik</b> daromad
-                                    (1-oy), keyingi
-                                    oydan
-                                    5,6 million kutilyabdi
-                                </p>
-                            </div>
-                        </div>
-                        <div class="resultsSlide">
-                            <div class="resultsSlidePhoto">
-                                <img src="./images/classmets/3.avif" loading="lazy" decoding="async" width="116"
-                                    height="208" alt="images">
-                            </div>
-
-                            <div class="resultsSlideCompare">
-                                <p class="resultsSlideCompare__text">Sheraliyev Diyorbek | 19 yosh</p>
-                                <h3>Kursdan oldin:</h3>
-                                <p style="margin-bottom: 16px;">«Uzum Nasiya» da yordamchi <br> operator edi</p>
-
-                                <h3 style="color: #FF6700;">Kursdan keyin:</h3>
-                                <p
-                                    style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
-                                    «HERO ACADEMY» da Sotuv <br> Menejeri. Oylik daromadi kutuvi <br> $300. <b>Kelajakda
-                                        600-700$</b>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="resultsSlide">
-                            <div class="resultsSlidePhoto">
-                                <img src="./images/classmets/4.avif" loading="lazy" decoding="async" width="116"
-                                    height="208" alt="images">
-                            </div>
-
-                            <div class="resultsSlideCompare">
-                                <p class="resultsSlideCompare__text">Doshanova Shaxlo | 34 yosh</p>
-                                <h3>Kursdan oldin:</h3>
-                                <p style="margin-bottom: 16px;">Toshkent Tez Tibbiy yordam <br> bo'limida operator.</p>
-
-                                <h3 style="color: #FF6700;">Kursdan keyin:</h3>
-                                <p
-                                    style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
-                                    «Asko» kompaniyasida  sotuv <br> menejeri 2.5 mln so'm  FIKSA+KPI <br> boshlanishi 10 mln
-                                    so'mgacha  <br>
-                                    maqsadlari 25 MLN so’m
-                                </p>
-                            </div>
-                        </div>
-                        <div class="resultsSlide">
-                            <div class="resultsSlidePhoto">
-                                <img src="./images/classmets/5.avif" loading="lazy" decoding="async" width="116"
-                                    height="208" alt="images">
-                            </div>
-
-                            <div class="resultsSlideCompare">
-                                <p class="resultsSlideCompare__text">Ilhomjon Axmedov | 25 yosh</p>
-                                <h3>Kursdan oldin:</h3>
-                                <p style="margin-bottom: 16px;">Oldin shafyor bo‘lib ishlagan.</p>
-
-                                <h3 style="color: #FF6700;">Kursdan keyin:</h3>
-                                <p
-                                    style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
-                                «BISSEL»  pilisoslari kompaniyasida  sotuv menejeri  bo‘lib  ish boshlayabdi, o'qishini 3-haftasida.
-    Oylik daromadi kutuvi <b>4-5 million</b> may oyi uchun, 1-oyga.
-                                </p>
-                            </div>
+                            <h3 style="color: #FF6700;">Kursdan keyin:</h3>
+                            <p
+                                style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
+                                «Generator house» kompaniyasida <br> sotuv menejeri. Oylik daromadi <br>
+                                <b>3 MLN+KPI,</b> o'sib borish imkoniyati. <br>
+                                5,6 million kutilyabdi
+                            </p>
                         </div>
                     </div>
+
+                    <div class="resultsSlide">
+                        <div class="resultsSlidePhoto">
+                            <img src="./images/classmets/1.avif" loading="lazy" decoding="async" width="116"
+                                height="208" alt="images">
+                        </div>
+
+                        <div class="resultsSlideCompare">
+                            <p class="resultsSlideCompare__text">Dexqonova Mu’mina | 23 yosh</p>
+                            <h3>Kursdan oldin:</h3>
+                            <p style="margin-bottom: 16px;">Hech qayerda ishlamagan</p>
+
+                            <h3 style="color: #FF6700;">Kursdan keyin:</h3>
+                            <p
+                                style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
+                                «Global sert»  kompaniyasida  <br>
+                                <b>Sotuv menejeri. 4 mln so’m</b> oylik daromad, keyingi oydan
+                                6, 7 million kutilyabdi
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resultsSlide">
+                        <div class="resultsSlidePhoto">
+                            <img src="./images/classmets/2.avif" loading="lazy" decoding="async" width="116"
+                                height="208" alt="images">
+                        </div>
+
+                        <div class="resultsSlideCompare">
+                            <p class="resultsSlideCompare__text">Xaydarov Shaxobiddin | 21 yosh</p>
+                            <h3>Kursdan oldin:</h3>
+                            <p style="margin-bottom: 16px;">Qorovul bo'lib ishlagan</p>
+
+                            <h3 style="color: #FF6700;">Kursdan keyin:</h3>
+                            <p
+                                style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
+                                Hoover kompaniyasida sotuv <br> menejeri. Hozirda <b>3.5 million oylik</b> daromad
+                                (1-oy), keyingi
+                                oydan
+                                5,6 million kutilyabdi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resultsSlide">
+                        <div class="resultsSlidePhoto">
+                            <img src="./images/classmets/3.avif" loading="lazy" decoding="async" width="116"
+                                height="208" alt="images">
+                        </div>
+
+                        <div class="resultsSlideCompare">
+                            <p class="resultsSlideCompare__text">Sheraliyev Diyorbek | 19 yosh</p>
+                            <h3>Kursdan oldin:</h3>
+                            <p style="margin-bottom: 16px;">«Uzum Nasiya» da yordamchi <br> operator edi</p>
+
+                            <h3 style="color: #FF6700;">Kursdan keyin:</h3>
+                            <p
+                                style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
+                                «HERO ACADEMY» da Sotuv <br> Menejeri. Oylik daromadi kutuvi <br> $300. <b>Kelajakda
+                                    600-700$</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resultsSlide">
+                        <div class="resultsSlidePhoto">
+                            <img src="./images/classmets/4.avif" loading="lazy" decoding="async" width="116"
+                                height="208" alt="images">
+                        </div>
+
+                        <div class="resultsSlideCompare">
+                            <p class="resultsSlideCompare__text">Doshanova Shaxlo | 34 yosh</p>
+                            <h3>Kursdan oldin:</h3>
+                            <p style="margin-bottom: 16px;">Toshkent Tez Tibbiy yordam <br> bo'limida operator.</p>
+
+                            <h3 style="color: #FF6700;">Kursdan keyin:</h3>
+                            <p
+                                style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
+                                «Asko» kompaniyasida  sotuv <br> menejeri 2.5 mln so'm  FIKSA+KPI <br> boshlanishi 10
+                                mln
+                                so'mgacha  <br>
+                                maqsadlari 25 MLN so’m
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resultsSlide">
+                        <div class="resultsSlidePhoto">
+                            <img src="./images/classmets/5.avif" loading="lazy" decoding="async" width="116"
+                                height="208" alt="images">
+                        </div>
+
+                        <div class="resultsSlideCompare">
+                            <p class="resultsSlideCompare__text">Ilhomjon Axmedov | 25 yosh</p>
+                            <h3>Kursdan oldin:</h3>
+                            <p style="margin-bottom: 16px;">Oldin shafyor bo‘lib ishlagan.</p>
+
+                            <h3 style="color: #FF6700;">Kursdan keyin:</h3>
+                            <p
+                                style="font-size: 14px; line-height: 125%; font-weight: 400; font-family: 'Instrument Sans', sans-serif;">
+                                «BISSEL» pilisoslari kompaniyasida sotuv menejeri bo‘lib ish boshlayabdi, o'qishini
+                                3-haftasida.
+                                Oylik daromadi kutuvi <b>4-5 million</b> may oyi uchun, 1-oyga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="resultsDots">
                     <div class="resultsDot">
